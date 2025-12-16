@@ -40,3 +40,16 @@ This is a simple desktop based Java game of Tic Tac Toe developed using Java Swi
 - The computer plays as O and selects moves randomly from available cells.
 - Implemented using Java’s Random class.
 - Designed for simplicity and beginner-level understanding.
+
+
+---
+
+## ▶️ How to Run the Game
+
+1. Make sure **Java (JDK 8 or later)** is installed.
+2. Clone or download the repository.
+3. Open the project in any Java-supported IDE (IntelliJ, Eclipse, VS Code).
+4. Run the following file:
+   ```bash
+   MainApp.java
+
