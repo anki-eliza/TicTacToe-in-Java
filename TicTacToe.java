@@ -104,6 +104,7 @@ public class TicTacToe {
 
                 }
                 gameOver=true;
+                showPlayAgainDialog();
                 return;     
             }
         }
@@ -120,6 +121,7 @@ public class TicTacToe {
 
                 }
                 gameOver=true;
+                showPlayAgainDialog();
                 return;     
             }
         }
@@ -130,6 +132,7 @@ public class TicTacToe {
                 setWin(board[i][i]);
             }
             gameOver=true;
+            showPlayAgainDialog();
             return;
         }
 
@@ -139,6 +142,7 @@ public class TicTacToe {
                 setWin(board[i][2-i]);
             }
             gameOver=true;
+            showPlayAgainDialog();
             return;
         }
 
@@ -149,6 +153,7 @@ public class TicTacToe {
                 }
             }
             gameOver=true;
+            showPlayAgainDialog();
         }
 
     }
@@ -164,6 +169,35 @@ public class TicTacToe {
         tile.setForeground(Color.blue);
         textLabel.setText("It's a tie!");
     }
+
+    void resetGame() {
+    gameOver = false;
+    turns = 0;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            board[i][j].setText("");
+            board[i][j].setBackground(Color.pink);
+            board[i][j].setForeground(Color.darkGray);
+        }
+    }
+    
+
+    }
+
+    void showPlayAgainDialog() {
+    int option = JOptionPane.showConfirmDialog(frame,"Do you want to play again?",
+            "Play Again",JOptionPane.YES_NO_OPTION);
+
+    if (option == JOptionPane.YES_OPTION) {
+        resetGame();
+    } else {
+        frame.dispose();        // close game window
+        new MainApp();          // go back to start screen (optional)
+    }
+    }
+
+
 
     
 }
