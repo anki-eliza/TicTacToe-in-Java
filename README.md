@@ -9,6 +9,7 @@ This is a simple desktop based Java game of Tic Tac Toe developed using Java Swi
 - Player vs Player mode
 - Player vs Computer mode (Random mode)
 - Start screen with full background image
+- Play again option
 - Automatic win detection (rows, columns, diagonals)
 - Tie detection
 - Visual highlighting of winning tiles
@@ -43,6 +44,22 @@ This is a simple desktop based Java game of Tic Tac Toe developed using Java Swi
 
 
 ---
+
+## 🔁 Play Again / Reset Game Feature
+
+After every game result (win or tie), the application prompts the user with a **Play Again dialog**.
+
+### How it works:
+- A confirmation dialog appears asking:
+  > *“Do you want to play again?”*
+- **YES** → The game board resets instantly:
+  - All tiles are cleared
+  - Colors are restored
+  - Turn counter resets
+- **NO** → The current game window closes and returns to the start screen
+
+This feature improves user experience by allowing continuous gameplay without restarting the application.
+
 
 ## ▶️ How to Run the Game
 
