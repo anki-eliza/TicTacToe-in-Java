@@ -31,7 +31,7 @@ This is a simple desktop based Java game of Tic Tac Toe developed using Java Swi
 
 1. Player vs Player
 - Two players take turns on the same system.
-- Player X starts first.
+- Player X starts first. After game resets, the next player goes first.
 - The game announces the winner or a tie automatically.
 
 2. Player vs Computer
@@ -46,7 +46,7 @@ This is a simple desktop based Java game of Tic Tac Toe developed using Java Swi
 
 ## ▶️ How to Run the Game
 
-1. Make sure **Java (JDK 8 or later)** is installed.
+1. Make sure Java (JDK 8 or later) is installed.
 2. Clone or download the repository.
 3. Open the project in any Java-supported IDE (IntelliJ, Eclipse, VS Code).
 4. Run the following file:
