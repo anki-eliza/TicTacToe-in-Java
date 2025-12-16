@@ -1,9 +1,5 @@
-# TicTacToe-in-Java
+#🎮TicTacToe-in-Java
 This is a simple desktop based Java game of Tic Tac Toe developed using Java Swing that allows users to play the classic 3×3 board game in both Player vs Player and Player vs Computer modes. The game features an interactive graphical user interface, win and draw detection, and a computer opponent powered by a random move algorithm.
-# 🎮 Tic Tac Toe – Java Swing Game
-
-A desktop-based implementation of the classic **Tic Tac Toe** game developed using **Java Swing and AWT**.  
-The project provides an interactive graphical user interface and supports both **Player vs Player** and **Player vs Computer** gameplay modes.
 
 ---
 
@@ -29,6 +25,18 @@ The project provides an interactive graphical user interface and supports both *
 - Event Handling
 - Random Library (for Computer moves)
 
+---
 
+## Game Modes
 
+1. Player vs Player
+- Two players take turns on the same system.
+- Player X starts first.
+- The game announces the winner or a tie automatically.
 
+2. Player vs Computer
+- Player competes against the computer.
+- Player always plays as X.
+- The computer plays as O and selects moves randomly from available cells.
+- Implemented using Java’s Random class.
+- Designed for simplicity and beginner-level understanding.
